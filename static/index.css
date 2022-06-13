@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+    margin: 0 auto;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.box {
+    background-color: #ff0000;
+    width: 300px;
+    padding: 65px;
+}
+
+#green {
+    background-color: green;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: white;
+}

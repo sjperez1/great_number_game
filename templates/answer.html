@@ -14,21 +14,21 @@
     <h3>Take a guess!</h3>
     <div>
         {% if session["randnum"] == session["randguess"]: %}
-            <div class="box green">
+            <div class="box" id="green">
                 <h1>{{session["randnum"]}} was the number!</h1>
             </div>
         {% endif %}
         {% if session["randnum"] > session["randguess"]: %}
-            <div class="box" id="low">
+            <div class="box">
                 <h1>Too low!</h1>
             </div>
         {% endif %}
         {% if session["randnum"] < session["randguess"]: %}
-            <div class="box" id="high">
+            <div class="box">
                 <h1>Too high!</h1>
+                <a href="/" class="btn btn-outline-dark">Play again!</a>
             </div>
             {% endif %}
-        <a href="/" class="btn">Play again!</a>
     </div>
 </body>
 </html>
